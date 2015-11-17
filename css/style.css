@@ -2,11 +2,19 @@ body {
 	font-family: "Microsoft Yahei";
 	margin: 0;
 	padding: 0;
+	height: 100%;
+}
+.low {
+	bottom: -1200px !important;
+}
+.choosen {
+	border: 1px solid green;
 }
 .wrap {
 	width: 100%;
 	position: relative;
 	height: 100%;
+	overflow-y: hidden;
 }
 .row {
 	width: 100%;
@@ -22,11 +30,15 @@ body {
 /* 外层浮动 */
 .con {
 	width: 80%;
-	position: absolute;
 	bottom: 0;
+	position: absolute;
 	height: 90%;
 	left: 10%;
 	right: 10%;
+	transition: bottom 1.5s;
+	-moz-transition: bottom 1.5s;
+	-webkit-transition: bottom 1.5s;
+	-o-transition: bottom 1.5s;
 }
 .con .title {
 	overflow: hidden;
@@ -189,6 +201,165 @@ body {
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-o-border-radius: 5px;
+}
+#buy .content {
+	position: relative;
+}
+#buy .bg-img {
+	height: 100%;
+}
+#buy .content .buy-con {
+	position: absolute;
+	top: 50px;
+	padding: 0px 20px;
+	width: 100%;
+}
+#buy .content .buy-con .choose {
+	width: 100%;
+}
+#buy .content .buy-con .choose .row .item {
+	padding: 5px;
+}
+#buy .content .buy-con .choose .row .item .choose-btn {
+	width: 100%;
+	text-align: center;
+	background-color: #2B2B2B;
+	padding: 10px 0;
+	margin: 2px 0;
+	font-size: 12px;
+}
+#buy .content .buy-con .choose .row .item .disabled {
+	background-color: rgba(50, 50, 50, 0.2);
+}
+#buy .content .contact {
+	width: 100%;
+}
+#buy .content .contact-form {
+	width: 100%;
+	padding: 10px;
+	margin-left: -20px;
+}
+#buy .content .contact-form .form-control {
+	width: 100%;
+	margin: 10px;
+	height: 30px;
+}
+#buy .content .btn {
+	width: 100px;
+	font-size: 14px;
+	height: 35px;
+	background-color: #170E07;
+	border: 1px solid #B88B58;
+	color: #FFF;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+#confirm .content {
+	position: relative;
+}
+#confirm .bg-img {
+	height: 100%;
+}
+#confirm .buy-con {
+	position: absolute;
+	top: 50px;
+	padding: 0px 20px;
+	width: 100%;
+}
+#confirm .buy-con .info > div {
+	margin: 5px 0;
+}
+#confirm .content .buy-con .hr {
+	height: 1px;
+	background-color: #2B2B2B;
+	width: 100%;
+	margin: 20px auto;
+	margin-left: -10px;
+}
+#confirm .content .buy-con .choose {
+	width: 100%;
+}
+#confirm .content .buy-con .choose .row .item {
+	padding: 5px;
+}
+#confirm .content .buy-con .choose .row .item .choose-btn {
+	width: 100%;
+	text-align: center;
+	background-color: #2B2B2B;
+	padding: 10px 0;
+	margin: 2px 0;
+	font-size: 12px;
+}
+#confirm .btns .item {
+	text-align: center;
+	margin-top: 30%;
+}
+#confirm .btns .item .btn {
+	width: 90px;
+	font-size: 14px;
+	background-color: #170E07;
+	border: 1px solid #B88B58;
+	color: #FFF;
+	padding: 6px;
+	line-height: 20px1;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+#success .content {
+	position: relative;
+}
+#success .bg-img {
+	height: 100%;
+}
+#success .status {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	margin-left: -10px;
+	padding: 10px;
+	text-align: center;
+}
+#success .status p {
+	text-indent: 0px;
+	padding: 0 20px;
+	text-align: left;
+}
+#success .status .info-text p {
+	text-align: center;
+	text-indent: 0px;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 15px 0;
+	color: #FCFCFC;
+}
+#success .status .icon {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	border: 2px solid #B88B58;
+}
+#success .status .result {
+	position: relative;
+	width: 100%;
+	margin-top: -20px;
+	padding: 20px;
+}
+#success .status .result img {
+	width: 100%;
+	height: 80px;
+}
+#success .status .result .details {
+	position: absolute;
+	top: 30px;
+}
+#success .status .result .details {
+	color: #333;
 }
 /* 滚动条 */
 ::-webkit-scrollbar {
