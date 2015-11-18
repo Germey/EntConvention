@@ -23,9 +23,10 @@
 	        header("Location:" . $url);
 	        exit();
 	    }
+	    
 	?>
 	<div class="main">
-		<div class="to-index" style="display: none"><a href="http://mf23.cn/main.php">首页</a></div>
+		<div class="to-index" style="display: none"><a href="http://mf23.cn/wx/php/main.php">首页</a></div>
 		<div id="mediaplayer"></div> 
 	</div>
 	<script src="js/jquery-1.9.1.min.js"></script>

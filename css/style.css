@@ -385,7 +385,7 @@ p.noindent{
 }
 #success .status .result img {
 	width: 100%;
-	height: 70px;
+	height: 90px;
 }
 #success .status .result .details {
 	position: absolute;
@@ -394,6 +394,15 @@ p.noindent{
 #success .status .result .details {
 	color: #333;
 	padding: 0 10px;
+}
+#success .result .details {
+	text-align: left;
+}
+#success .result .name {
+	text-align: left;
+}
+#success .result .phone {
+	padding-left: 0;
 }
 .info-con {
 	width: 95%;

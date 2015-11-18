@@ -3,6 +3,7 @@ jwplayer('mediaplayer').setup({
 	'width': '100%',
 	'aspectratio':'9:16',
 	'file': 'media/Dark_Version_Blue.mp4',
+	'autostart': true,
 	events: {
 		onComplete: function() { 
 			window.location.href="http://mf23.cn/wx/php/main.php";

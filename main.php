@@ -15,7 +15,7 @@
     require_once('initsql.php');
 
     //判定是否授权
-    
+    /*
     $code = '';
     if (isset($_GET["code"])) {
         $code = $_GET['code'];
@@ -25,7 +25,7 @@
         header("Location:" . $url);
         exit();
     }
-    
+    */
     //判定推广
     $state = 'arr+Main';
     if (isset($_GET['state'])) {
@@ -64,7 +64,7 @@
             <div class="btns">
                 <a name="intro" class="btn intro">大会介绍</a>
                 <a name="guest" class="btn guest">来宾介绍</a>
-                <a name="focus" class="btn letter">给你的信</a>
+                <a name="focus" class="btn letter">会议热点</a>
             </div>
             <div class="bottoms">
                 <div class="row">
@@ -542,11 +542,9 @@
                             <div class="form-group">
                                 <input class="form-control" placeholder="手机号码" id="form-phone">
                             </div>
-                            <!--
                             <div class="form-group">
                                 <input class="form-control" placeholder="地址" id="form-address">
                             </div>
-                            -->
                         </form>
                         <div class="text-center">
                             <a id="to-confirm" class="btn">下一步</a>
@@ -583,12 +581,10 @@
                             <span>手机号码：</span>
                             <span id="confirm-phone"></span>
                         </div>
-                        <!--
                         <div class="address">
                             <span>地址：</span>
                             <span id="confirm-address"></span>
                         </div>
-                        -->
                     </div>
                     <div class="hr"></div>
                     <div class="choose">
@@ -641,7 +637,6 @@
                         <img src="images/status/info.png">
                         <div class="details">
                             <div id="success-ticket">
-                                
                             </div>
                             <div class="name">
                                 <span>姓名：</span>
@@ -651,12 +646,10 @@
                                 <span>电话：</span>
                                 <span id="success-phone"></span>
                             </div>
-                            <!--
                             <div class="phone">
                                 <span>地址：</span>
                                 <span id="success-address"></span>
                             </div>
-                            -->
                         </div>
                     </div>    
                 </div>
@@ -736,8 +729,8 @@
         $("#buy-button").on("click", function() {
             var name = $("#confirm-name").html();
             var phone = $("#confirm-phone").html();
-            // var address = $("#confirm-address").html();
-            var address = "";
+            var address = $("#confirm-address").html();
+            // var address = "";
             var kind = $("#ticket-rank").val();
             var openid = "<?php echo $openid; ?>";
             var state = "<?php echo $state; ?>";
@@ -749,7 +742,6 @@
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     var msg = xhr.responseText;
                     var jsons = eval("("+msg+")");
-                    //alert(jsons.message);
                     pingpp.createPayment(jsons.charge, function(result, err) {
                         if (result == "success") {
                             // 只有微信公众账号 wx_pub 支付成功的结果会在这里返回，其他的 wap 支付结果都是在 extra 中对应的 URL 跳转。

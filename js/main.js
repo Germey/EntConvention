@@ -67,13 +67,10 @@ function judgeInfo() {
 	} else if (!checkPhone($("#form-phone").val())) {
 		showModal("请输入正确的手机号");
 		return false;
-	} 
-	/* else if (!$("#form-address").val()) {
+	} else if (!$("#form-address").val()) {
 		showModal("请填写您的地址");
 		return false;
-	}
-	*/ 
-	else {
+	} else {
 		return true;
 	}
 }
@@ -131,7 +128,12 @@ $(function() {
 			$(this).addClass("choosen");
 			//set input hidden value
 			$("#ticket-rank").val($(this).attr("rank"));
-			$("#confirm .ticket").text($(this).text());
+			var confirm_text = $(this).text();
+			//如果是私董席，体现价格
+			if ($(this).attr("rank") == 1) {
+				confirm_text += "：29999";
+			}
+			$("#confirm .ticket").text(confirm_text);
 		}
 	});
 	$("#seat-img").on("click", function() {
