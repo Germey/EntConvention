@@ -1,8 +1,51 @@
 function showModal(text) {
-	$("#mymodal").modal("show");
-	$("#mymodal .modal-body p").html(text);
-	$("#mymodal button").click(function(){
-		$("#mymodal").modal("hide");
+	$("#my-modal").modal("show");
+	$("#my-modal .modal-body p").html(text);
+	$("#my-modal button").click(function(){
+		$("#my-modal").modal("hide");
+	});
+}
+
+//设置旋转
+function rotatePic(ele, timeout, angle) {
+	if (timeout) {
+		setTimeout(function(){
+			ele.rotate({
+				angle:0, 
+				animateTo: angle,
+				easing: function (x,t,b,c,d) {
+		        	return c*(t/d)+b;
+		        }
+			});
+		}, timeout);
+	} else {
+		ele.rotate({
+			angle:0, 
+			animateTo:angle,
+			easing: function (x,t,b,c,d) {
+	        	return c*(t/d)+b;
+	        }
+		});
+	}
+}
+
+//显示详情页面，比如座位图放大，汇款信息详情
+function showDetailInfo(value) {
+	switch (value) {
+		case 1:
+			//汇款信息
+			$("#info-modal .details").html($("#finance-info").html());
+			//底层背景大小适配
+			//$(".info-con .finance-info .bg-img img").height($(".info-con .finance-info .text").height() + 100);
+			break;
+		case 2:
+			//座位放大图
+			$("#info-modal .details").html($("#seat-detail-info").html());
+			break;
+	}
+	$("#info-modal").modal("show");
+	$("#info-modal .close").click(function() {
+		$("#info-modal").modal("hide");
 	});
 }
 
@@ -24,29 +67,45 @@ function judgeInfo() {
 	} else if (!checkPhone($("#form-phone").val())) {
 		showModal("请输入正确的手机号");
 		return false;
-	} else if (!$("#form-address").val()) {
+	} 
+	/* else if (!$("#form-address").val()) {
 		showModal("请填写您的地址");
 		return false;
-	} else {
+	}
+	*/ 
+	else {
 		return true;
 	}
 }
 
 $(function() {
+	var dark_bg = "images/bg_dark.png";
+	//$("#success").removeClass("low");
+	//$("#nav").fadeIn();
+	//$("#info-modal").modal("show");
 	$(".con .close").on("click", function() {
 		//close button clicked
 		$(".con").addClass("low");
 		$("#nav").fadeIn();
+		$("#buy-btn").fadeOut();
+		$(".bg img").attr("src", "images/bg.png");
+		rotatePic($(this).find("img"), 0, 720);
 	});
 	$("#nav a").on("click", function() {
+		if ($(this).attr("name") == "intro" || $(this).attr("name") == "guest" || $(this).attr("name") == "focus") {
+			$("#buy-btn").fadeIn();
+		}
 		//nav button clicked
 		$("#"+$(this).attr("name")).removeClass("low");
 		$("#nav").fadeOut();
+		$(".bg img").attr("src", dark_bg);
+		rotatePic($("#"+$(this).attr("name")).find(".close img"), 1000, 360);
 	});
 	$("#seat a").on("click", function() {
 		//go to buy page
 		$("#seat").addClass("low");
 		$("#"+$(this).attr("name")).removeClass("low");
+		rotatePic($("#"+$(this).attr("name")).find(".close img"), 1000, 360);
 	});
 	$("#to-confirm").on("click", function() {
 		if (judgeInfo()) {
@@ -56,12 +115,12 @@ $(function() {
 			$("#confirm-address").html($("#form-address").val());
 			$("#buy").addClass("low");
 			$("#confirm").removeClass("low");
-			
 		}
 	});
 	$("#back-to-edit").on("click", function() {
 		$("#confirm").addClass("low");
 		$("#buy").removeClass("low");
+		rotatePic($("#buy").find(".close img"), 1000, 360);
 	});
 	$("#buy .choose .choose-btn").on("click", function() {
 		if ($(this).hasClass("disabled")) {
@@ -75,6 +134,22 @@ $(function() {
 			$("#confirm .ticket").text($(this).text());
 		}
 	});
+	$("#seat-img").on("click", function() {
+		//座位放大
+		showDetailInfo(2);
+	});
+	$("#finance-btn").on("click", function() {
+		//汇款详情
+		showDetailInfo(1);
+	});
+	//悬浮购买按钮，只在某些介绍页面出现
+	$("#buy-btn").on("click", function() {
+		$(".con").addClass("low");
+		$("#"+$(this).attr("name")).removeClass("low");
+		$(this).fadeOut();
+		rotatePic($("#"+$(this).attr("name")).find(".close img"), 1000, 360);
+	});
+	$("#nav-copy").fadeIn();
 
 });
 
