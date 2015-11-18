@@ -55,6 +55,6 @@ $MY_APP_KEY='wxa73bcce2b9c991ce';
 $MY_APP_SECRET='6035bcf24f38403455e39568046a4050';
 $HOST_URL='http://ali.futrees.net/wx/';
 $HOST_URL='http://101.200.3.227/wx/';
-$HOST_URL='http://mf23.cn/wx/';
+$HOST_URL='http://mf23.cn/wx/php/';
 date_default_timezone_set("Asia/Shanghai");
 

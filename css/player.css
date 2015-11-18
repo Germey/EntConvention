@@ -1,0 +1,25 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #000;
+}
+.jwlogo{
+	display: none;
+}
+.main {
+	position: relative;
+}
+.main .to-index {
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	text-align: center;
+	width: 100%;
+	color: #999;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 10px;
+}
+.main .to-index a {
+	color: #FFF;
+	text-decoration: none;
+}

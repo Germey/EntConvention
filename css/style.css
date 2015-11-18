@@ -264,6 +264,9 @@ p.noindent{
 #buy .content .contact {
 	width: 100%;
 }
+#buy .content {
+	overflow-x: hidden; 
+}
 #buy .content .contact-form {
 	width: 100%;
 	padding: 10px;
