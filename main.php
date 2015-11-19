@@ -15,7 +15,7 @@
     require_once('initsql.php');
 
     //判定是否授权
-    /*
+    
     $code = '';
     if (isset($_GET["code"])) {
         $code = $_GET['code'];
@@ -25,12 +25,16 @@
         header("Location:" . $url);
         exit();
     }
-    */
+    
     //判定推广
     $state = 'arr+Main';
     if (isset($_GET['state'])) {
         $state = $_GET['state'];
     }
+
+    // JSSDK
+    $jssdk = new JSSDK("wxa73bcce2b9c991ce", "6035bcf24f38403455e39568046a4050");
+    $signPackage = $jssdk->GetSignPackage();
 
     //获取open_id
     $openid = \Pingpp\WxpubOAuth::getOpenid($MY_APP_KEY, $MY_APP_SECRET, $code);
@@ -56,6 +60,9 @@
 
 
 ?>
+    <div class="icon" style="display: none">
+        <img src="images/logo_s.png">
+    </div>
     <div class="wrap">
         <div class="bg">
             <img src="images/bg.png">
@@ -722,7 +729,8 @@
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.rotate.min.js"></script>
-    <script src="lib/pingpp.js" type="text/javascript"></script>
+    <script src="lib/pingpp.js"></script>
+    <script src="js/jweixin.js"></script>
     <script src="js/main.js"></script>
     <script>
     $(function() {
@@ -749,11 +757,11 @@
                             var body = jsons.charge.body.split(":");
                             name = body[0];
                             phone = body[1];
-                            // address = body[2];
+                            address = body[2];
                             $("#success-ticket").html($("#confirm .ticket").text());
                             $("#success-name").html(name);
                             $("#success-phone").html(phone);
-                            // $("#success-address").html(address);
+                            $("#success-address").html(address);
                             $("#confirm").addClass("low");
                             $("#success").removeClass("low");
                         } else if (result == "fail") {
@@ -768,6 +776,42 @@
             }
         });
     });
+
+    wx.config({
+        appId: '<?php echo $signPackage["appId"];?>',
+        timestamp: <?php echo $signPackage["timestamp"];?>,
+        nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+        signature: '<?php echo $signPackage["signature"];?>',
+        jsApiList: [
+            'onMenuShareTimeline', 'onMenuShareAppMessage'
+        ]
+    });
+    wx.onMenuShareTimeline({
+        title: '2015中国企业家年会', // 分享标题
+        link: 'http://mf23.cn/wx/php', // 分享链接
+        imgUrl: 'http://mf23.cn/wx/php/images/logo_s.png', // 分享图标
+        success: function () { 
+            // 用户确认分享后执行的回调函数
+        },
+        cancel: function () { 
+            // 用户取消分享后执行的回调函数
+        }
+    });
+    wx.onMenuShareAppMessage({
+        title: '2015中国企业家年会', // 分享标题
+        desc: '2015中国企业家年会即将开始', // 分享描述
+        link: 'http://mf23.cn/wx/php', // 分享链接
+        imgUrl: 'http://mf23.cn/wx/php/images/logo_s.png', // 分享图标
+        type: 'link', // 分享类型,music、video或link，不填默认为link
+        dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+        success: function () { 
+            // 用户确认分享后执行的回调函数
+        },
+        cancel: function () { 
+            // 用户取消分享后执行的回调函数
+        }
+    });
+    
     </script>
 </body>
 </html>

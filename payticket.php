@@ -7,7 +7,7 @@
  */
 require_once(dirname(__FILE__) . '/init.php');
 require_once('initsql.php');
-require_once "jssdk.php";
+
 
 header("Content-Type: text/html;charset=utf-8");
 

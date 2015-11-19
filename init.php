@@ -48,6 +48,8 @@ require(dirname(__FILE__) . '/lib/Token.php');
 require(dirname(__FILE__) . '/lib/CardInfo.php');
 require(dirname(__FILE__) . '/lib/SmsCode.php');
 
+
+require(dirname(__FILE__) . '/lib/jssdk.php');
 // wx_pub OAuth 2.0 method
 require(dirname(__FILE__) . '/lib/WxpubOAuth.php');
 
