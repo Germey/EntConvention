@@ -783,7 +783,7 @@
         nonceStr: '<?php echo $signPackage["nonceStr"];?>',
         signature: '<?php echo $signPackage["signature"];?>',
         jsApiList: [
-            'onMenuShareTimeline', 'onMenuShareAppMessage'
+            'onMenuShareTimeline', 'onMenuShareAppMessage', 'showMenuItems'
         ]
     });
     wx.onMenuShareTimeline({
@@ -811,6 +811,21 @@
             // 用户取消分享后执行的回调函数
         }
     });
+    document.querySelector('#showMenuItems').onclick = function () {
+        wx.showMenuItems({
+            menuList: [
+                'menuItem:profile', 
+                'menuItem:addContact', 
+            ],
+            success: function (res) {
+                
+            },
+            fail: function (res) {
+                
+            }
+        });
+    };
+    //wx.showAllNonBaseMenuItem();
     
     </script>
 </body>

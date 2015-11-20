@@ -35,6 +35,7 @@
 		<video controls="controls" autoplay="autoplay" id="video" poster="images/player.png" width="100%">
 		  	<source src="media/Dark_Version_Blue.mp4" type="video/mp4" width="100%" height="100%"/>
 		</video>
+		<a href="http://mf23.cn/wx/php/main.php" id="next" style="display: none"></a>
 	</body>
 	<script src="js/jweixin.js"></script>
 	<script type="text/javascript">
@@ -53,7 +54,10 @@
 	        video.play();
 	    }, false);
 	    video.addEventListener("ended", function() {
-	    	window.location.href="http://mf23.cn/wx/php/main.php";
+	    	//alert("ddd");
+	    	//window.navigate("http://mf23.cn/wx/php/main.php");
+	    	//window.location.href="http://mf23.cn/wx/php/main.php";
+	    	document.getElementById("next").click();
 	    });
 	</script>
 </html>
