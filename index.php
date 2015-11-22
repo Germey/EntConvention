@@ -32,7 +32,7 @@
 		    }
 			
 		?>
-		<video controls="controls" autoplay="autoplay" id="video" poster="images/player.png" width="100%">
+		<video autoplay="autoplay" id="video" poster="images/player.png" width="100%">
 		  	<source src="media/Dark_Version_Blue.mp4" type="video/mp4" width="100%" height="100%"/>
 		</video>
 		<a href="http://mf23.cn/wx/php/main.php" id="next" style="display: none"></a>

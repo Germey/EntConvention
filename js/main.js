@@ -77,6 +77,7 @@ function judgeInfo() {
 
 $(function() {
 	var dark_bg = "images/bg_dark.png";
+	//$("#confirm").removeClass("low");
 	//$("#success").removeClass("low");
 	//$("#nav").fadeIn();
 	//$("#info-modal").modal("show");
@@ -152,7 +153,13 @@ $(function() {
 		rotatePic($("#"+$(this).attr("name")).find(".close img"), 1000, 360);
 	});
 	$("#nav-copy").fadeIn();
-
+	$("#guest .content .col").each(function() {
+		var thisHeight = $(this).height();
+		var sibHeight = $(this).siblings().height();
+		if (sibHeight > thisHeight) {
+			$(this).height(sibHeight);
+		}
+	});
 });
 
 /*

@@ -93,7 +93,7 @@ switch($t_kind){
         break;
     case 4:
         $amount=139900;
-        $subject="白金席";
+        $subject="黄金席";
         break;
     case 5:
         $amount=99900;

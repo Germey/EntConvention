@@ -5,6 +5,12 @@ body {
 	height: 100%;
 	background-color: #000;
 }
+.bold {
+	font-weight: bold;
+}
+.finance-text {
+	line-height: 22px;
+}
 .low {
 	bottom: -1200px !important;
 }
@@ -12,7 +18,7 @@ body {
 	border: 1px solid green;
 }
 .close-con {
-	width: 15px;
+	width: 18px;
 }
 .wrap {
 	width: 100%;
@@ -24,8 +30,8 @@ body {
 	width: 100%;
 	text-align: center;
 	font-size: 12px;
+	color: #997650;
 	margin-top: 8px;
-	color: #999;
 	height: 20px;
 }
 .row {
@@ -47,7 +53,7 @@ p.noindent{
 	width: 80%;
 	bottom: 0;
 	position: absolute;
-	height: 90%;
+	height: 95%;
 	left: 10%;
 	right: 10%;
 	transition: bottom 1.5s;
@@ -57,25 +63,26 @@ p.noindent{
 }
 .con .title {
 	overflow: hidden;
-	height: 8%;
+	height: 7%;
 }
 .con .title .name {
-	font-size: 16px;
+	font-size: 20px;
 	color: #EEE;
 	font-weight: bold;
 }
 .con .title .close {
 	color: #FFF;
-	width: 16px;
+	width: 20px;
 	height: 20px;
 	font-weight: initial;
 	text-shadow: none;
-	font-size: 29px;
+	font-size: 25px;
 	opacity: 0.6;
+	padding-bottom: 5px;
 	text-align: center;
 }
 .con .content {
-	height: 92%;
+	height: 93%;
 	background-color: #272727;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -89,7 +96,7 @@ p.noindent{
 	margin-bottom: 10px; 
 }
 .con .content .top-tag span {
-	font-size: 14px;
+	font-size: 15px;
 	background-color: #8D6D47;
 	padding: 5px;
 }
@@ -99,9 +106,9 @@ p.noindent{
 }
 .con .content p {
 	margin: 5px 0;
-	text-indent: 30px;
 	color: #ACACAC;
-	line-height: 20px;
+	line-height: 22px;
+	font-size: 15px;
 }
 .con .content h2 {
 	border-left: 3px solid #8D6D47;
@@ -148,6 +155,7 @@ p.noindent{
 	top: 80px;
 	font-size: 13px;
 	line-height: 60px;
+	padding-left: 8px;
 }
 #nav .btns .letter {
 	width: 65px;
@@ -157,6 +165,7 @@ p.noindent{
 	top: 70px;
 	font-size: 11px;
 	line-height: 50px;
+	padding-left: 7px;
 }
 #nav .bottoms {
 	width: 100%;
@@ -184,13 +193,18 @@ p.noindent{
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-o-border-radius: 5px;
+	background-color: rgba(32, 22, 22, 0.8);
+	box-shadow: 0px 0px 40px rgba(220, 220, 220, 0.2);
+	-webkit-box-shadow: 0px 0px 20px rgba(220, 220, 220, 0.2);
+	-o-box-shadow: 0px 0px 20px rgba(220, 220, 220, 0.2);
 }
 #guest .content .row {
 	width: inherit;
 	margin: 0;
 }
 #guest .content .col {
-	padding: 2px;
+	padding: 0 4px;
+	margin: 4px 0;
 }
 #guest .content .item {
 	background-color: #181717;
@@ -198,20 +212,24 @@ p.noindent{
 	text-align: center;
 	width: 100%;
 	margin: auto;
+	height: 100%;
 }
 #guest .content .item img {
 	width: 100%;
 	height: 140px;
 }
 #guest .content .brief {
-	font-size: 10px;
+	font-size: 12px;
 	padding: 3px;
+	padding-top: 6px;
 	text-align: left;
 }
 #guest .content .item .name {
 	padding: 10px;
 	width: 100%;
-	height: 40px;
+	height: 30px;
+	line-height: 10px;
+	font-weight: bold;
 	text-align: center;
 	background-color: #B88B58;
 }
@@ -231,6 +249,9 @@ p.noindent{
 }
 #seat p {
 	text-indent: 0;
+}
+#seat .seat-intro {
+	line-height: 22px;
 }
 #buy .content {
 	position: relative;
@@ -256,6 +277,7 @@ p.noindent{
 	background-color: #2B2B2B;
 	padding: 10px 0;
 	margin: 2px 0;
+	padding-bottom: 5px;
 	font-size: 12px;
 }
 #buy .content .buy-con .choose .row .item .disabled {
@@ -346,7 +368,10 @@ p.noindent{
 	position: relative;
 }
 #success .bg-img {
-	height: 100%;
+	height: 530px;
+}
+#success .bg-img img {
+	height: 530px;
 }
 #success .status {
 	position: absolute;
@@ -377,15 +402,29 @@ p.noindent{
 	-o-border-radius: 50%;
 	border: 2px solid #B88B58;
 }
+#success .status .qcode-p {
+	text-align: center;
+}
 #success .status .result {
 	position: relative;
 	width: 100%;
 	margin-top: -20px;
 	padding: 20px;
 }
+#success .status .result .qcode-wrap {
+	position: absolute;
+	right: 25px;
+	bottom: 35px;
+	width: 50px;
+	height: 50px;
+}
 #success .status .result img {
 	width: 100%;
 	height: 90px;
+}
+#success .status .result .qcode-wrap .qcode { 
+	width: 50px;
+	height: 50px;
 }
 #success .status .result .details {
 	position: absolute;
@@ -465,16 +504,19 @@ p.noindent{
 #buy-btn a {
 	width: 100px;
 	font-size: 10px;
-	height: 20px;
+	height: 25px;
 	background: rgba(32, 22, 22, 0.8);
 	border: 1px solid #B88B58;
 	color: #FFF;
 	text-align: center;
-	line-height: 6px;
+	line-height: 10px;
 	margin: 20px auto;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-o-border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(220, 220, 220, 0.3);
+	-webkit-box-shadow: 0px 0px 20px rgba(220, 220, 220, 0.3);
+	-o-box-shadow: 0px 0px 20px rgba(220, 220, 220, 0.3);
 }
 /* 滚动条 */
 ::-webkit-scrollbar {
