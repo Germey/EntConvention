@@ -533,23 +533,23 @@
                         <span>选择票类：</span>
                         <div class="row">
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[5])<=0?'disabled':''?>" rank="5">嘉宾席：999元<br>余：<?php echo $kind_count[5]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[5])<=0?'disabled':''?>" rank="5"><span>嘉宾席：999元</span><br>余：<?php echo $kind_count[5]; ?></div>
                             </div>
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[4])<=0?'disabled':''?>" rank="4">黄金席：1399元<br>余：<?php echo $kind_count[4]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[4])<=0?'disabled':''?>" rank="4"><span>黄金席：1399元</span><br>余：<?php echo $kind_count[4]; ?></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[3])<=0?'disabled':''?>" rank="3">铂金席：1999元<br>余：<?php echo $kind_count[3]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[3])<=0?'disabled':''?>" rank="3"><span>铂金席：1999元</span><br>余：<?php echo $kind_count[3]; ?></div>
                             </div>
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[2])<=0?'disabled':''?>" rank="2">钻石席：2999元<br>余：<?php echo $kind_count[2]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[2])<=0?'disabled':''?>" rank="2"><span>钻石席：2999元</span><br>余：<?php echo $kind_count[2]; ?></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[1])<=0?'disabled':''?>" rank="1">私董席<br>余：<?php echo $kind_count[1]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[1])<=0?'disabled':''?>" rank="1"><span>私董席</span><br>余：<?php echo $kind_count[1]; ?></div>
                             </div>
                         </div>
                     </div>
@@ -652,7 +652,7 @@
                     </div>
                     <img class="icon" src="images/status/success.png">
                     <p>
-                        72小时内会有工作人员联系您，请保持购票手机畅通<br>如有疑问请拨打：<br><a href="tel://021-59882097">021-59882097</a>&nbsp;<a href="tel://021-50855699">021-50855699</a><br>请随时关注官方微信最新企业年会动态。<br>
+                        72小时内会有工作人员联系您，请保持购票手机畅通<br>如有疑问请拨打：<br><a href="tel://021-59882097">021-59882097</a>&nbsp;&nbsp;<a href="tel://021-50855699">021-50855699</a><br>请随时关注官方微信最新企业年会动态。<br>
                     </p>
                     <p>以下是您的购票信息:</p>
                     <div class="result">

@@ -129,7 +129,7 @@ $(function() {
 			$(this).addClass("choosen");
 			//set input hidden value
 			$("#ticket-rank").val($(this).attr("rank"));
-			var confirm_text = $(this).text();
+			var confirm_text = $(this).find("span").text();
 			//如果是私董席，体现价格
 			if ($(this).attr("rank") == 1) {
 				confirm_text += "：29999";

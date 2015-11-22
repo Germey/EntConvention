@@ -165,7 +165,7 @@ p.noindent{
 	top: 70px;
 	font-size: 11px;
 	line-height: 50px;
-	padding-left: 7px;
+	padding-left: 9px;
 }
 #nav .bottoms {
 	width: 100%;
@@ -216,7 +216,7 @@ p.noindent{
 }
 #guest .content .item img {
 	width: 100%;
-	height: 140px;
+	height: 130px;
 }
 #guest .content .brief {
 	font-size: 12px;
