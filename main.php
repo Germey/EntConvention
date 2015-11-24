@@ -24,7 +24,7 @@
     require_once('initsql.php');
 
     //判定是否授权
-    /*
+    
     $code = '';
     if (isset($_GET["code"])) {
         $code = $_GET['code'];
@@ -34,7 +34,7 @@
         header("Location:" . $url);
         exit();
     }
-    */
+    
     //判定推广
     $state = 'arr+Main';
     if (isset($_GET['state'])) {
