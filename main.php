@@ -7,6 +7,15 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>2015中国企业家年会</title>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?5a35cb7559f767e85d9c9f8526fb1c48";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 <body>
 <?php   
@@ -15,7 +24,7 @@
     require_once('initsql.php');
 
     //判定是否授权
-    
+    /*
     $code = '';
     if (isset($_GET["code"])) {
         $code = $_GET['code'];
@@ -25,7 +34,7 @@
         header("Location:" . $url);
         exit();
     }
-    
+    */
     //判定推广
     $state = 'arr+Main';
     if (isset($_GET['state'])) {
@@ -101,7 +110,7 @@
                 <div class="details">
                     <img src="images/intro/img1.png">
                     <p>2015年是“十二五”收官之年，也是“十三五”谋局之年，更是中国经济转变发展模式进入新常态后的变局之年。决胜未来—2015中国企业家年会在此背景下隆重召开，旨在就宏观形势和热点议题展开深入研讨，帮助企业了解更多全球及国内宏观经济环境及政策走向等问题，协助企业准确研判市场变化，承上启下制定发展规划，做好企业决策。</p>
-                    <p>2015—中国企业家年会，将邀请部委领导、企业领袖、商界大佬及知名专家现场做精彩分享，相关会议成果将见诸于公众媒体，形成舆论最强音。</p>
+                    <p>决胜未来—2015中国企业家年会，将邀请（原）部委领导、企业领袖、商界大佬及知名专家现场做精彩分享，相关会议成果将见诸于公众媒体，形成舆论最强音。</p>
                     <img src="images/intro/img4.png">
                     <h2>最具价值的参会者</h2>
                     <p class="noindent">10位政府要员<br>20位商界大咖<br>100位行业领袖<br>5000位中小企业家代表<br>他们充满激情、正能量、渴望实现梦想！</p>
@@ -132,12 +141,12 @@
                     <p>追求高速成长的企业都会在10年内采取积极向外扩张的大动作，例如外延增长，开展新业务，或者进行大的变革，这些都需要借助资本的力量。对企业来说，重大变革需要战略革命，也需要对接资本市场进行融资渠道的开拓。那么当机会来了，企业该如何应对兼并收购的机会？如何为直接融资开通渠道？未来企业兼并重组之后的股权结构如何设计？又如何保证创始股东的利益?</p>
                     <h2>互联网+</h2>
                     <p>“互联网+”和中国资本市场正在成为中国经济转型最重要的两个引擎。2015年两会，“互联网+”首次写入了《政府工作报告》，成为国家战略的一部分。国家要推动移动互联网、云计算、大数据、物联网等与现代产业结合，让更多的传统行业经过互联网改造后“在线化、数据化”，从而使信息和数据转化成巨大的生产力，成为社会财富增长的新源泉。那么，“互联网+”将促进哪些产业的转型升级？企业又该如何应对，以适应这种产业布局？</p>
-                    <img src="images/focus/img7.png">
+                    <img src="images/focus/img10.png">
                     <h2>股权众筹及上市</h2>
                     <p>2015年中国互联网金融出现了蓬勃发展之势。尤其在Kickstarter、Indiegogo等众筹平台在国外走红后，这种通过群众集资的方式获得资金援助用以实现创意及梦想的新兴方式为国内大众所效仿。众筹模式受到各领域创业者的争相分食。看国内，淘宝、京东相继上线了众筹频道，国务院工作会议更是多次提到“股权众筹”这个风头敏感话题，股权众筹的春天真的来了吗？</p>
                     <p>谈到上市大家一定会想到上市板块中的一个巨大风口—新三板。最新数据公布，越来越多人相信，新三板正成为新的造福机器，杨丽萍通过新三板身价近40亿，孙红雷从新三板赚7000万。那么您能抓住今天的新三板机遇吗？</p>
-                    <img src="images/focus/img8.png">
-                    <h2>决胜未来—看中国未来10年</h2>
+                    <img src="images/focus/img11.png">
+                    <h2>决胜未来—看中国下个10年</h2>
                     <p>中国经历了30多年的快速发展之后，目前又再经历新的巨大转型，而且问题更复杂，影响更深远。各领域权威和商界大咖将逐一阐述他们理解的中国“改革学”， 共同探讨中国企业所面临的新常态、新风口、新机遇。看他们如何应对新形势下的挑战，如何在解决社会问题的过程中找到商机，并最终改变未来的经济增长模式，我们期待他们的对话与争锋。</p>
                 </div>
                 <br>
@@ -147,15 +156,21 @@
                 <div class="details text-center">
                     <p class="noindent">
                         【会议时间】<br>2015年12月26日至27日<br>（28日设有分论坛，客户自行选择参与）<br><br>
-                        【会议地点】<br>中国.上海<br>上海交通大学闵行校区（综合体育馆）<br><br>
+                        【会议地点】<br>中国 · 上海<br>上海交通大学闵行校区（综合体育馆）<br><br>
                         【活动安排】<br>12月26日-27日流程<br>主题分享、大咖对话、名流酒会<br>12月28日分论坛流程<br>《互联网+》、《中国好项目》等<br><br>
                         【主办单位】<br>微创（中国）有限公司<br>丝绸之路国际企业联合会<br><br>
                         【联合主办】<br>苏州代颜网文化传播有限公司<br><br>
                         【联合冠名】<br>智通三千物流平台<br><br>
-                        【承办单位】<br>唐骏资本商学院<br>九众平台-积分宝商学院<br>承瑾集团上海承瑾文化传播有限公司<br><br>
-                        【协办单位】<br>金融邦控股集团、广州智囊互联网服务股份有限公司、浙江融天下电子商务有限公司、唐骏资本商学院西南分院\西北分院\华南分院、义乌聚进教育信息咨询有限公司、石家庄亿美阳资本管理有限公司、广西久善今心投资管理有限公司<br><br>
-                        【媒体支持】<br>中国经营报 环球时报 南风窗 第一财经频道 CCTV证券频道 东方卫视 北京卫视 东方企业家 新浪网 网易 雅虎 腾讯 凤凰网 中华网 搜狐 央视网 新华网 TOM 中国企业新闻网 和讯网 金融界等60家媒体<br><br>
-                        【席位介绍】<br>1、嘉宾席；2、黄金席；3、铂金席；4、钻石席<br><br>
+                        【承办单位】<br>唐骏资本商学院<br>九众平台-积分宝商学院<br>承瑾集团 · 上海承瑾文化传播有限公司<br><br>
+                        【席位介绍】<br>
+                        【嘉宾席】<br>
+                        三层看台座席，纵览全局，超高性价比<br><br>
+                        【黄金席】<br>
+                        二层看台座席，多角度感观，全方位视听<br><br>
+                        【铂金席】<br>
+                        一层看台座席，直面大咖，TED气息<br><br>
+                        【钻石席】<br>
+                        内场座席超强能量场，与大咖近距离接触<br><br>
                     </p>
                     <p class="noindent bold">
                         一次不容错过的盛会<br>
@@ -196,7 +211,7 @@
                     </div>
                     <div class="col-xs-6 col">
                         <div class="item">
-                            <img src="images/guest/img8.png">
+                            <img src="images/guest/img2.png">
                             <div class="name">
                                 牛根生
                             </div>
@@ -283,7 +298,7 @@
                     </div>
                     <div class="col-xs-6 col">
                         <div class="item">
-                            <img src="images/guest/img2.png">
+                            <img src="images/guest/img8.png">
                             <div class="name">
                                 柳传志
                             </div>
@@ -500,16 +515,16 @@
                     </div>
                     <p><b>座位介绍：</b></p>
                     <p class="text-center seat-intro">
-                        私董席<br>
-                        前排座席，与大咖互动，共进圆桌宴<br>
-                        钻石席<br>
-                        内场座席，超强能量场，与大咖近距离接触<br>
-                        铂金席<br>
-                        一层看台座席，直面大咖，TED气息<br>
-                        黄金席<br>
-                        二层看台座席，多角度感观，全方位视听<br>
-                        嘉宾席<br>
-                        三层看台座席，纵览全局，超高性价比<br>
+                        【私董席】<br>
+                        前排座席，与大咖互动，共进圆桌宴<br><br>
+                        【钻石席】<br>
+                        内场座席，超强能量场，与大咖近距离接触<br><br>
+                        【铂金席】<br>
+                        一层看台座席，直面大咖，TED气息<br><br>
+                        【黄金席】<br>
+                        二层看台座席，多角度感观，全方位视听<br><br>
+                        【嘉宾席】<br>
+                        三层看台座席，纵览全局，超高性价比<br><br>
                     </p>
                     <div class="copyright">复树文化出品</div>
                 </div>
@@ -533,23 +548,23 @@
                         <span>选择票类：</span>
                         <div class="row">
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[5])<=0?'disabled':''?>" rank="5"><span>嘉宾席：999元</span><br>余：<?php echo $kind_count[5]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[5])<=0?'disabled':''?>" rank="5"><span>嘉宾席：999元</span><br>余票：<?php echo $kind_count[5]; ?></div>
                             </div>
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[4])<=0?'disabled':''?>" rank="4"><span>黄金席：1399元</span><br>余：<?php echo $kind_count[4]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[4])<=0?'disabled':''?>" rank="4"><span>黄金席：1399元</span><br>余票：<?php echo $kind_count[4]; ?></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[3])<=0?'disabled':''?>" rank="3"><span>铂金席：1999元</span><br>余：<?php echo $kind_count[3]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[3])<=0?'disabled':''?>" rank="3"><span>铂金席：1999元</span><br>余票：<?php echo $kind_count[3]; ?></div>
                             </div>
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[2])<=0?'disabled':''?>" rank="2"><span>钻石席：2999元</span><br>余：<?php echo $kind_count[2]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[2])<=0?'disabled':''?>" rank="2"><span>钻石席：2999元</span><br>余票：<?php echo $kind_count[2]; ?></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[1])<=0?'disabled':''?>" rank="1"><span>私董席</span><br>余：<?php echo $kind_count[1]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[1])<=0?'disabled':''?>" rank="1"><span>私董席</span><br>余票：<?php echo $kind_count[1]; ?></div>
                             </div>
                         </div>
                     </div>
@@ -611,7 +626,7 @@
                         <span>选择支付方式：</span>
                         <div class="row">
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn choosen">微信支付</div>
+                                <div kind="" class="choose-btn choosen"><img class="weixin-icon"src="images/status/weixin.png">微信支付</div>
                             </div>
                             <div class="col-xs-6 item">
                                 <div kind="" class="choose-btn" id="finance-btn">汇款信息</div>
@@ -651,11 +666,13 @@
                         <p>购票成功!</p>
                     </div>
                     <img class="icon" src="images/status/success.png">
-                    <p>
-                        72小时内会有工作人员联系您，请保持购票手机畅通<br>如有疑问请拨打：<br><a href="tel://021-59882097">021-59882097</a>&nbsp;&nbsp;<a href="tel://021-50855699">021-50855699</a><br>请随时关注官方微信最新企业年会动态。<br>
+                    <p class="text-center">
+                        72小时内会有工作人员联系您<br>请保持购票手机畅通<br>如有疑问可直接拨打<br><a href="tel://021-59882097">021-59882097</a>&nbsp;&nbsp;<a href="tel://021-50855699">021-50855699</a><br>
                     </p>
-                    <p>以下是您的购票信息:</p>
-                    <div class="result">
+                    <hr>
+                    <p class="texe-left">请随时关注官方微信了解最新企业年会动态 :</p>
+                    
+                    <div class="result" style="display: none">
                         <img src="images/status/info.png">
                         <div class="details">
                             <div id="success-ticket">
@@ -674,7 +691,9 @@
                             </div>
                         </div>
                         <div class="qcode-wrap"><img class="qcode" src="images/qcode/img2.jpg"></div>
-                    </div>    
+                    </div>
+                    
+                    <img class="qcode" src="images/qcode/img2.jpg">
                 </div>
                 <div class="copyright">复树文化出品</div>
             </div>
@@ -718,13 +737,13 @@
                 <div class="text">
                     <div class="name">【官方付款账户】</div>
                     <p class="finance-text">
-                        1. 开户银行：浙江民泰商业银行上海奉贤支行。<br>
+                        开户行：浙江民泰商业银行上海奉贤支行。<br>
                         账户：5818 5194 6700 015<br>
-                        户名：承瑾（上海）投资管理有限公司<br>
-                        2. 开户银行：招商银行上海分行浦东大道支行<br>
+                        户名：承瑾（上海）投资管理有限公司；<br><br>
+                        开户行：招商银行上海分行浦东大道支行<br>
                         账户：6214 8512 1639 8045<br>
-                        户名：曾娟娟<br>
-                        3. 开户银行：中国工商银行上海上师大支行<br>
+                        户名：曾娟娟<br><br>
+                        开户行：中国工商银行上海上师大支行<br>
                         账户：6222 0810 0102 7825 045<br>
                         户名：曾娟娟<br>
                     </p>
@@ -738,7 +757,7 @@
                 </div>
             </div>
         </div>
-        <div name="buy" id="buy-btn" class=" text-center" style="display: none">
+        <div name="seat" id="buy-btn" class=" text-center" style="display: none">
             <a class="btn">立即购票</a>
         </div>
     </div>

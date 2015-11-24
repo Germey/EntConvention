@@ -7,6 +7,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<link href="css/player.css" rel="stylesheet">
 		<title>2015中国企业家年会</title>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "//hm.baidu.com/hm.js?5a35cb7559f767e85d9c9f8526fb1c48";
+			  var s = document.getElementsByTagName("script")[0];
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
 	</head>
 	<style>
 		body {
