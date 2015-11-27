@@ -59,16 +59,20 @@ function checkPhone(value) {
 
 function judgeInfo() {
 	if (!$("#ticket-rank").val()) {
-		showModal("请选择一个席别");
+		//showModal("请选择一个席别");
+		alert("请选择一个席别");
 		return false;
 	} else if (!$("#form-name").val()) {
-		showModal("请填写您的姓名");
+		//showModal("请填写您的姓名");
+		alert("请填写您的姓名");
 		return false;
 	} else if (!checkPhone($("#form-phone").val())) {
-		showModal("请输入正确的手机号");
+		//showModal("请输入正确的手机号");
+		alert("请输入正确的手机号");
 		return false;
 	} else if (!$("#form-address").val()) {
-		showModal("请填写您的地址");
+		//showModal("请填写您的地址");
+		alert("请填写您的地址");
 		return false;
 	} else {
 		return true;
@@ -122,7 +126,8 @@ $(function() {
 	});
 	$("#buy .choose .choose-btn").on("click", function() {
 		if ($(this).hasClass("disabled")) {
-			showModal("该席别已售完");
+			//showModal("该席别已售完");
+			alert("该席别已售完");
 		} else if (!$(this).hasClass("choosen")) {
 			// add green wrap to indicate choosen
 			$("#buy .choose .choose-btn").removeClass("choosen");

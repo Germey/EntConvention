@@ -175,7 +175,7 @@
                     <p class="noindent bold">
                         一次不容错过的盛会<br>
                         一次创造财富的商旅<br>
-                        2015 中国企业家年会，最后一场压轴盛宴……
+                        2015 中国企业家年会<br>最后一场压轴盛宴……
                     </p>
                     <img src="images/focus/img9.png">
                     <br>
@@ -668,9 +668,8 @@
                     <img class="icon" src="images/status/success.png">
                     <p class="text-center">
                         72小时内会有工作人员联系您<br>请保持购票手机畅通<br>如有疑问可直接拨打<br><a href="tel://021-59882097">021-59882097</a>&nbsp;&nbsp;<a href="tel://021-50855699">021-50855699</a><br>
+                        请随时关注官方微信了解最新企业年会动态 :
                     </p>
-                    <hr>
-                    <p class="texe-left">请随时关注官方微信了解最新企业年会动态 :</p>
                     
                     <div class="result" style="display: none">
                         <img src="images/status/info.png">
@@ -737,9 +736,9 @@
                 <div class="text">
                     <div class="name">【官方付款账户】</div>
                     <p class="finance-text">
-                        开户行：浙江民泰商业银行上海奉贤支行。<br>
+                        开户行：浙江民泰商业银行上海奉贤支行<br>
                         账户：5818 5194 6700 015<br>
-                        户名：承瑾（上海）投资管理有限公司；<br><br>
+                        户名：承瑾（上海）投资管理有限公司<br><br>
                         开户行：招商银行上海分行浦东大道支行<br>
                         账户：6214 8512 1639 8045<br>
                         户名：曾娟娟<br><br>
