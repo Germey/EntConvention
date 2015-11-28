@@ -219,7 +219,7 @@
                             <div class="brief">
                                 蒙牛乳业集团创始人，
                                 老牛基金会创始人、名誉会长，
-                                “全球捐股第一人” 1999年创立蒙牛，后用短短8年时间，使蒙牛成为全球液态奶冠军、中国乳业总冠军。
+                                “全球捐股第一人” 1999年创立蒙牛，后用短短8年时间，使蒙牛成为全球液态奶冠军、中国乳业总冠军
 
                             </div>
                         </div>
@@ -486,7 +486,7 @@
                             <div class="brief">
                                 中国资本的第一人，
                                 中国打工皇帝，
-                                微软(中国)终身荣誉总裁，
+                                微软（中国）终身荣誉总裁，
                                 微创（中国）董事长
                             </div>
                         </div>
@@ -668,7 +668,7 @@
                         <p>购票成功!</p>
                     </div>
                     <img class="icon" src="images/status/success.png">
-                    <p class="text-center">
+                    <p class="text-center p-code">
                         请保持购票手机畅通<br>
                         工作人员会在72小时内与您联系<br>
                         如有疑问可直接拨打咨询热线<br>
@@ -697,8 +697,8 @@
                     </div>
                     
                     <img class="qcode" src="images/qcode/img2.jpg">
-                    <p class="text-center">
-                        长按识别二维码关注官方微信，<br>
+                    <p class="text-center p-code">
+                        长按识别二维码关注官方微信<br>
                         了解最新企业年会动态<br>
                     </p>
                 </div>

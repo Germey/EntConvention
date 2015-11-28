@@ -223,7 +223,7 @@ p.noindent{
 	font-size: 12px;
 	padding: 3px;
 	padding-top: 6px;
-	text-align: center;
+	text-align: left;
 }
 #guest .content .item .name {
 	padding: 10px;
@@ -466,6 +466,9 @@ p.noindent{
 }
 #success .result .phone {
 	padding-left: 0;
+}
+#success .p-code {
+	line-height: 16px;
 }
 .info-con {
 	width: 95%;
