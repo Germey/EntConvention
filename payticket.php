@@ -166,14 +166,14 @@ if(strlen($cancle_id)<16){
 
 //生成订单
 
-
-$orderNo = substr($id, 0, 16).substr($t_openid,12);
+$t=time();
+$orderNo = substr($id, 0, 8).substr($t_openid,21).$t;
 $orderNo=str_replace('-','',$orderNo);
 
 //ping++ part
 
-\Pingpp\Pingpp::setApiKey('sk_test_SSarLCPCi5eHanrLCOeH0ar5'); //测试key
-//\Pingpp\Pingpp::setApiKey('sk_live_GWD8WLDqbTOSqb9er5W9CGi5'); //真实key
+//\Pingpp\Pingpp::setApiKey('sk_test_SSarLCPCi5eHanrLCOeH0ar5'); //测试key
+\Pingpp\Pingpp::setApiKey('sk_live_GWD8WLDqbTOSqb9er5W9CGi5'); //真实key
 $channel = strtolower("wx_pub");
 $extra = array('open_id' => $t_openid);
 

@@ -383,7 +383,7 @@
                                  “中国房地产之父”原国家进出口检验局副局长，
                                  原中房集团董事长，
                                  原幸福人寿董事长（幸福人寿创办人），
-                                 现担任中房集团理事长，中国企业家联合会执行副会长等职务。
+                                 现担任中房集团理事长，中国企业家联合会执行副会长等职务
                             </div>
                         </div>
                     </div>
@@ -699,7 +699,7 @@
                     <img class="qcode" src="images/qcode/img2.jpg">
                     <p class="text-center p-code">
                         长按识别二维码关注官方微信<br>
-                        了解最新企业年会动态<br>
+                        了解最新企业家年会动态<br>
                     </p>
                 </div>
                 <div class="copyright">复树文化出品</div>
@@ -775,8 +775,21 @@
     <script src="js/jweixin.js"></script>
     <script src="js/main.js"></script>
     <script>
+    var submitted = 0;
     $(function() {
         $("#buy-button").on("click", function() {
+            if (submitted) {
+                alert("您的订单已失效，请重新选择购买");
+                $("#confirm-name").html("");
+                $("#confirm-phone").html("");
+                $("#confirm-address").html("");
+                $("#ticket-rank").val("");
+                $(".con").addClass("low");
+                $("#buy").removeClass("low");
+                $("#buy .choose .choose-btn").removeClass("choosen");
+                submitted = 0;
+                return;
+            }
             var name = $("#confirm-name").html();
             var phone = $("#confirm-phone").html();
             var address = $("#confirm-address").html();
@@ -791,9 +804,13 @@
             xhr.send(null);
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4 && xhr.status == 200) {
+                    submitted = 1;
                     var msg = xhr.responseText;
                     //alert(msg);
                     var jsons = eval("("+msg+")");
+                    if(jsons.charge==null){
+                       alert("支付出错，错误信息如下，请截图告知管理员谢谢！"+msg); 
+                    }
                     pingpp.createPayment(jsons.charge, function(result, err) {
                         if (result == "success") {
                             // 只有微信公众账号 wx_pub 支付成功的结果会在这里返回，其他的 wap 支付结果都是在 extra 中对应的 URL 跳转。
@@ -827,34 +844,51 @@
         nonceStr: '<?php echo $signPackage["nonceStr"];?>',
         signature: '<?php echo $signPackage["signature"];?>',
         jsApiList: [
-            'onMenuShareTimeline', 'onMenuShareAppMessage', 'showMenuItems'
+            'onMenuShareTimeline', 'onMenuShareAppMessage', 'showMenuItems','showAllNonBaseMenuItem'
         ]
     });
-    wx.onMenuShareTimeline({
-        title: '2015中国企业家年会', // 分享标题
-        link: 'http://mf23.cn/wx/php', // 分享链接
-        imgUrl: 'http://mf23.cn/wx/php/images/logo_s.png', // 分享图标
-        success: function () { 
-            // 用户确认分享后执行的回调函数
-        },
-        cancel: function () { 
-            // 用户取消分享后执行的回调函数
-        }
+    wx.ready(function() {
+        wx.onMenuShareTimeline({
+            title: '世界-尽收眼底，未来-由此开启（视频文件，请在WiFi或信号良好环境下打开）', // 分享标题
+            link: 'http://mf23.cn/wx/php', // 分享链接
+            imgUrl: 'http://mf23.cn/wx/php/images/logo_s.png', // 分享图标
+            success: function () { 
+                // 用户确认分享后执行的回调函数
+            },
+            cancel: function () { 
+                // 用户取消分享后执行的回调函数
+            }
+        });
+        wx.onMenuShareAppMessage({
+            title: '决胜未来-2015企业家年会', // 分享标题
+            desc: '世界-尽收眼底\n未来-由此开启\n（视频文件，请在WiFi或信号良好环境下打开）', // 分享描述
+            link: 'http://mf23.cn/wx/php', // 分享链接
+            imgUrl: 'http://mf23.cn/wx/php/images/logo_s.png', // 分享图标
+            type: 'link', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+            success: function () {
+                // 用户确认分享后执行的回调函数
+            },
+            cancel: function () { 
+                // 用户取消分享后执行的回调函数
+            }
+        });
+
+        wx.showMenuItems({
+            menuList: [
+                'menuItem:profile', 
+                'menuItem:addContact', 
+            ],
+            success: function (res) {
+                
+            },
+            fail: function (res) {
+                
+            }
+        });
+        wx.showAllNonBaseMenuItem();
     });
-    wx.onMenuShareAppMessage({
-        title: '2015中国企业家年会', // 分享标题
-        desc: '2015中国企业家年会即将开始', // 分享描述
-        link: 'http://mf23.cn/wx/php', // 分享链接
-        imgUrl: 'http://mf23.cn/wx/php/images/logo_s.png', // 分享图标
-        type: 'link', // 分享类型,music、video或link，不填默认为link
-        dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
-        success: function () { 
-            // 用户确认分享后执行的回调函数
-        },
-        cancel: function () { 
-            // 用户取消分享后执行的回调函数
-        }
-    });
+    
     document.querySelector('#showMenuItems').on("click", function() {
         wx.showMenuItems({
             menuList: [

@@ -224,6 +224,7 @@ p.noindent{
 	padding: 3px;
 	padding-top: 6px;
 	text-align: left;
+	color: #ACACAC;
 }
 #guest .content .item .name {
 	padding: 10px;
@@ -400,7 +401,7 @@ p.noindent{
 	text-align: center;
 }
 #success .status p a {
-	color: #ECECEC;
+	color: #ACACAC;
 	text-decoration: none;
 }
 #success hr {
@@ -469,6 +470,7 @@ p.noindent{
 }
 #success .p-code {
 	line-height: 16px;
+	color: #ACACAC !important;
 }
 .info-con {
 	width: 95%;
@@ -512,7 +514,7 @@ p.noindent{
 .info-con .details .finance-info .text .name {
 	font-size: 16px;
 	padding-top: 10px;
-	color: #EEE;
+	color: #ACACAC;
 	text-align: center;
 }
 .info-con .details .finance-info .text p {

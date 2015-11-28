@@ -54,9 +54,36 @@
 	        nonceStr: '<?php echo $signPackage["nonceStr"];?>',
 	        signature: '<?php echo $signPackage["signature"];?>',
 	        jsApiList: [
-	            'onMenuShareTimeline',
+	            'onMenuShareTimeline', 'onMenuShareAppMessage'
 	        ]
 	    });
+	    wx.ready(function() {
+		    wx.onMenuShareTimeline({
+		        title: '决胜未来-2015企业家年会', // 分享标题
+		        link: 'http://mf23.cn/wx/php', // 分享链接
+		        imgUrl: 'http://mf23.cn/wx/php/images/logo_s.png', // 分享图标
+		        success: function () { 
+		            // 用户确认分享后执行的回调函数
+		        },
+		        cancel: function () { 
+		            // 用户取消分享后执行的回调函数
+		        }
+		    });
+		    wx.onMenuShareAppMessage({
+		        title: '决胜未来-2015企业家年会', // 分享标题
+		        desc: '世界-尽收眼底，未来-由此开启', // 分享描述
+		        link: 'http://mf23.cn/wx/php', // 分享链接
+		        imgUrl: 'http://mf23.cn/wx/php/images/logo_s.png', // 分享图标
+		        type: 'link', // 分享类型,music、video或link，不填默认为link
+		        dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+		        success: function () { 
+		            // 用户确认分享后执行的回调函数
+		        },
+		        cancel: function () { 
+		            // 用户取消分享后执行的回调函数
+		        }
+		    });
+		});
 	    video = document.getElementById('video');
 		video.play();
 	    document.addEventListener("WeixinJSBridgeReady", function () {

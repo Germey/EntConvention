@@ -6,7 +6,8 @@
  * Time: 23:18
  */
 
-/*
+``
+/**
 require_once('initsql.php');
 
 for($i=1;$i<=200;$i++){
