@@ -104,9 +104,9 @@
                 </div>
             </div>
             <div class="content">
-                <div class="top-tag">
-                    <span>导读</span>
-                </div>
+<!--                <div class="top-tag">-->
+<!--                    <span>导读</span>-->
+<!--                </div>-->
                 <div class="details">
                     <img src="images/intro/img1.png">
                     <p>2015年是“十二五”收官之年，也是“十三五”谋局之年，更是中国经济转变发展模式进入新常态后的变局之年。决胜未来—2015中国企业家年会在此背景下隆重召开，旨在就宏观形势和热点议题展开深入研讨，帮助企业了解更多全球及国内宏观经济环境及政策走向等问题，协助企业准确研判市场变化，承上启下制定发展规划，做好企业决策。</p>
@@ -117,7 +117,7 @@
                     <h2>最精彩的流程安排</h2>
                     <p class="noindent">智者对话—商界大咖唇枪舌战、思维碰撞!<br>主题分享—现场聆听权威专家和商界大咖对未来的重新想象<br>名流酒会—与政府要员、商界大咖近距离接触、零距离互动</p>
                     <h2>最超值的回报</h2>
-                    <p class="noindent">最精准的品牌传播平台<br>最优质的人脉资源拓展<br>最好的表达、链接机会
+                    <p class="noindent">最精准的品牌传播平台<br>最优质的人脉资源拓展<br>最好的表达、链接机会<br><br>
                     <div class="copyright">复树文化出品</div>
                 </div>
             </div>
@@ -132,9 +132,9 @@
                 </div>
             </div>
             <div class="content">
-                <div class="top-tag">
-                    <span>会议热点</span>
-                </div>
+<!--                <div class="top-tag">-->
+<!--                    <span>会议热点</span>-->
+<!--                </div>-->
                 <div class="details">
                     <img src="images/focus/img1.png">
                     <h2>资本</h2>
@@ -162,20 +162,21 @@
                         【联合主办】<br>苏州代颜网文化传播有限公司<br><br>
                         【联合冠名】<br>智通三千物流平台<br><br>
                         【承办单位】<br>唐骏资本商学院<br>九众平台-积分宝商学院<br>承瑾集团 · 上海承瑾文化传播有限公司<br><br>
-                        【席位介绍】<br>
-                        【嘉宾席】<br>
-                        三层看台座席，纵览全局，超高性价比<br><br>
-                        【黄金席】<br>
-                        二层看台座席，多角度感观，全方位视听<br><br>
-                        【铂金席】<br>
-                        一层看台座席，直面大咖，TED气息<br><br>
-                        【钻石席】<br>
-                        内场座席超强能量场，与大咖近距离接触<br><br>
+<!--                        【席位介绍】<br>-->
+<!--                        【嘉宾席】<br>-->
+<!--                        三层看台座席，纵览全局，超高性价比<br><br>-->
+<!--                        【黄金席】<br>-->
+<!--                        二层看台座席，多角度感观，全方位视听<br><br>-->
+<!--                        【铂金席】<br>-->
+<!--                        一层看台座席，直面大咖，TED气息<br><br>-->
+<!--                        【钻石席】<br>-->
+<!--                        内场座席超强能量场，与大咖近距离接触<br><br>-->
                     </p>
                     <p class="noindent bold">
                         一次不容错过的盛会<br>
                         一次创造财富的商旅<br>
-                        2015 中国企业家年会<br>最后一场压轴盛宴……
+                        <span style="margin: 0 -7px">2015中国企业家年会，最后一场压轴盛宴…</span>
+                        <br>
                     </p>
                     <img src="images/focus/img9.png">
                     <br>
@@ -186,7 +187,7 @@
         <div id="guest" class="con low">
             <div class="title">
                 <div class="name pull-left">
-                    <span>来宾介绍</span>
+                    <span>来宾介绍（过往及拟邀）</span>
                 </div>
                 <div class="close pull-right">
                     <img class="close-con" src="images/close.png">
@@ -201,10 +202,10 @@
                                 龙永图
                             </div>
                             <div class="brief">
-                                原外经贸副部长<br>
-                                全球CEO发展大会联合主席<br>
-                                中国与全球化智库主席<br>
-                                央视2003年度经济人物<br>
+                                原外经贸副部长，
+                                全球CEO发展大会联合主席，
+                                中国与全球化智库主席，
+                                央视2003年度经济人物，
                                 中国入世谈判的首席谈判代表
                             </div>
                         </div>
@@ -216,8 +217,8 @@
                                 牛根生
                             </div>
                             <div class="brief">
-                                蒙牛乳业集团创始人<br>
-                                老牛基金会创始人、名誉会长<br>
+                                蒙牛乳业集团创始人，
+                                老牛基金会创始人、名誉会长，
                                 “全球捐股第一人” 1999年创立蒙牛，后用短短8年时间，使蒙牛成为全球液态奶冠军、中国乳业总冠军。
 
                             </div>
@@ -232,8 +233,8 @@
                                 潘石屹
                             </div>
                             <div class="brief">
-                                SOHO中国董事长<br>    
-                                最独领风骚的地产娱乐大师<br>      
+                                SOHO中国董事长，
+                                最独领风骚的地产娱乐大师，
                                 最善于“引势导利”的营销大师   
                             </div>
                         </div>
@@ -245,9 +246,9 @@
                                 俞敏洪
                             </div>
                             <div class="brief">
-                                新东方教育科技集团董事长<br>         
-                                洪泰基金联合创始人<br>
-                                中国最具影响力的50位商界领袖<br>
+                                新东方教育科技集团董事长，
+                                洪泰基金联合创始人，
+                                中国最具影响力的50位商界领袖，
                                 中国最具魅力校长”称号 
                             </div>
                         </div>
@@ -261,9 +262,9 @@
                                 李开复
                             </div>
                             <div class="brief">
-                                创新工场董事长兼首席执行官<br>
-                                曾任Google、微软全球副总裁<br>
-                                “真正成功的公司源于伟大的创业理念”<br>
+                                创新工场董事长兼首席执行官，
+                                曾任Google、微软全球副总裁，
+                                “真正成功的公司源于伟大的创业理念”，
                                 “只有创意没有执行力必然失败，只有执行力而创意欠缺，还是有机会成功”
                             </div>
                         </div>
@@ -275,10 +276,10 @@
                                 项兵
                             </div>
                             <div class="brief">
-                                曾任教于香港科技大学、
-                                上海中欧国际工商学院和北京大学<br>
-                                曾是中欧国际工商学院第一批(七名)核心教授之一<br>
-                                北京大学光华管理学院EMBA和EDP的创办主任和博士生导师<br>
+                                曾任教于香港科技大学，
+                                上海中欧国际工商学院和北京大学，
+                                曾是中欧国际工商学院第一批(七名)核心教授之一，
+                                北京大学光华管理学院EMBA和EDP的创办主任和博士生导师，
                                 现任长江商学院教授和创办院长
                             </div>
                         </div>
@@ -303,10 +304,10 @@
                                 柳传志
                             </div>
                             <div class="brief">
-                                联想集团创始人 <br>
-                                中国改革风云人物 <br>  
-                                全球最具影响力50大商业思想家 <br>       
-                                现任联想集团有限公司董事局名誉主席<br>
+                                联想集团创始人，
+                                中国改革风云人物，
+                                全球最具影响力50大商业思想家，
+                                现任联想集团有限公司董事局名誉主席，
                                 联想集团高级顾问
                             </div>
                         </div>
@@ -320,8 +321,8 @@
                                 周禹鹏
                             </div>
                             <div class="brief">
-                                前上海市副市长<br>
-                                市人大常委会副主任<br>
+                                前上海市副市长，
+                                市人大常委会副主任，
                                 现代服务业联合会会长
                             </div>
                         </div>
@@ -333,9 +334,9 @@
                                 董明珠
                             </div>
                             <div class="brief">
-                                格力电器董事长兼总裁<br>
-                                全球100位最佳CEO<br>
-                                中国经济年度人物年度经济人物奖<br>
+                                格力电器董事长兼总裁，
+                                全球100位最佳CEO，
+                                中国经济年度人物年度经济人物奖，
                                 《财富》亚太最具影响力的25位商界女性
                             </div>
                         </div>
@@ -349,10 +350,10 @@
                                 郎咸平
                             </div>
                             <div class="brief">
-                                知名学者 著名财经节目评论人<br>
-                                2003年荣登世界经济学家名人录<br>
-                                公认的世界金融学的顶级学者<br>
-                                中国互联网九大风云人物之一<br> 
+                                知名学者 著名财经节目评论人，
+                                2003年荣登世界经济学家名人录，
+                                公认的世界金融学的顶级学者，
+                                中国互联网九大风云人物之一，
                                 最活跃的中青年财务金融学家之一
                             </div>
                         </div>
@@ -364,8 +365,8 @@
                                 秦志辉
                             </div>
                             <div class="brief">
-                                中国科学院副研究员<br>
-                                中国科学院武汉物理与数学所，副研究员<br>
+                                中国科学院副研究员，
+                                中国科学院武汉物理与数学所，副研究员，
                                 工业和信息化部中小企业发展促进中心主任
                             </div>
                         </div>
@@ -379,10 +380,10 @@
                                 孟晓苏
                             </div>
                             <div class="brief">
-                                 “中国房地产之父”原国家进出口检验局副局长<br> 
-                                 原中房集团董事长<br>
-                                 原幸福人寿董事长（幸福人寿创办人）<br>
-                                 现担任中房集团理事长、中国企业家联合会执行副会长等职务。
+                                 “中国房地产之父”原国家进出口检验局副局长，
+                                 原中房集团董事长，
+                                 原幸福人寿董事长（幸福人寿创办人），
+                                 现担任中房集团理事长，中国企业家联合会执行副会长等职务。
                             </div>
                         </div>
                     </div>
@@ -393,8 +394,8 @@
                                 李佐军
                             </div>
                             <div class="brief">
-                                国务院发展研究中心资源与环境政策研究所副所长<br>
-                                著名经济学家，人本发展理论创立者<br>
+                                国务院发展研究中心资源与环境政策研究所副所长，
+                                著名经济学家，人本发展理论创立者，
                                 著有《人本发展理论》等五部专著
                             </div>
                         </div>
@@ -408,9 +409,9 @@
                                 洪清华
                             </div>
                             <div class="brief">
-                                驴妈妈旅游网创始人<br>
-                                景域国际旅游运营集团董事长<br>
-                                现任驴妈妈董事长 70年代的创业代表
+                                驴妈妈旅游网创始人，
+                                景域国际旅游运营集团董事长，
+                                现任驴妈妈董事长，70年代的创业代表
                             </div>
                         </div>
                     </div>
@@ -421,8 +422,8 @@
                                 张旭豪
                             </div>
                             <div class="brief">
-                                饿了么网上订餐平台创始人兼CEO<br>
-                                饿了么获6.3亿美元融资 创全球外卖行业最高纪录<br>
+                                饿了么网上订餐平台创始人兼CEO，
+                                饿了么获6.3亿美元融资，创全球外卖行业最高纪录，
                                 与美国GrubHub、德国Delivery Hero、英国JustEat同为全球价值最高的外卖巨头 
                             </div>
                         </div>
@@ -436,11 +437,11 @@
                                 冯仑
                             </div>
                             <div class="brief">
-                                万通控股董事长<br>
-                                阿拉善SEE生态协会第四任会长<br>
-                                全国工商联房地产商会副会长<br>
-                                中华民营企业联合会常务副会长<br>
-                                中国房地产协会常务理事<br>
+                                万通控股董事长，
+                                阿拉善SEE生态协会第四任会长，
+                                全国工商联房地产商会副会长，
+                                中华民营企业联合会常务副会长，
+                                中国房地产协会常务理事，
                                 全国房地产经理人联盟荣誉主席
                             </div>
                         </div>
@@ -452,9 +453,9 @@
                                 王忠禹
                             </div>
                             <div class="brief">
-                                原政协副主席<br>
-                                中国企业联合会会长<br>
-                                国务委员、国务院秘书长、国家行政学院院长<br>
+                                原政协副主席，
+                                中国企业联合会会长，
+                                国务委员、国务院秘书长、国家行政学院院长，
                                 国家经济贸易委员会主任、党组书记
                             </div>
                         </div>
@@ -468,10 +469,10 @@
                                 蒋树声
                             </div>
                             <div class="brief">
-                                原人大常委会委员长<br> 
-                                十一届全国人大常委会副委员长<br>
-                                民盟中央主席<br>
-                                国务院学位委员会委员<br> 
+                                原人大常委会委员长，
+                                十一届全国人大常委会副委员长，
+                                民盟中央主席，
+                                国务院学位委员会委员， 
                                 南京大学校长
                             </div>
                         </div>
@@ -483,9 +484,9 @@
                                 唐骏
                             </div>
                             <div class="brief">
-                                中国资本的第一人<br> 
-                                中国打工皇帝<br> 
-                                微软(中国)终身荣誉总裁<br> 
+                                中国资本的第一人，
+                                中国打工皇帝，
+                                微软(中国)终身荣誉总裁，
                                 微创（中国）董事长
                             </div>
                         </div>
@@ -513,7 +514,7 @@
                     <div class="text-center">
                         <a name="buy" class="btn">立即购票</a>
                     </div>
-                    <p><b>座位介绍：</b></p>
+<!--                    <p><b>座位介绍：</b></p>-->
                     <p class="text-center seat-intro">
                         【私董席】<br>
                         前排座席，与大咖互动，共进圆桌宴<br><br>
@@ -548,27 +549,28 @@
                         <span>选择票类：</span>
                         <div class="row">
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[5])<=0?'disabled':''?>" rank="5"><span>嘉宾席：999元</span><br>余票：<?php echo $kind_count[5]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[5])<=1307?'disabled':''?>" rank="5"><span>嘉宾席：999元</span><br>余票：<?php echo $kind_count[5]-1307; ?></div>
                             </div>
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[4])<=0?'disabled':''?>" rank="4"><span>黄金席：1399元</span><br>余票：<?php echo $kind_count[4]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[4])<=1165?'disabled':''?>" rank="4"><span>黄金席：1399元</span><br>余票：<?php echo $kind_count[4]-1165; ?></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[3])<=0?'disabled':''?>" rank="3"><span>铂金席：1999元</span><br>余票：<?php echo $kind_count[3]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[3])<=1213?'disabled':''?>" rank="3"><span>铂金席：1999元</span><br>余票：<?php echo $kind_count[3]-1213; ?></div>
                             </div>
                             <div class="col-xs-6 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[2])<=0?'disabled':''?>" rank="2"><span>钻石席：2999元</span><br>余票：<?php echo $kind_count[2]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[2])<=584?'disabled':''?>" rank="2"><span>钻石席：2999元</span><br>余票：<?php echo $kind_count[2]-584; ?></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[1])<=0?'disabled':''?>" rank="1"><span>私董席</span><br>余票：<?php echo $kind_count[1]; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[1])<=171?'disabled':''?>" rank="1"><span>私董席</span><br>余票：<?php echo $kind_count[1]-171; ?></div>
                             </div>
                         </div>
                     </div>
                     <div class="contact">
+                        <br>
                         <span>联系方式：</span>
                         <form class="contact-form" role="form">
                             <div class="form-group">
@@ -667,8 +669,10 @@
                     </div>
                     <img class="icon" src="images/status/success.png">
                     <p class="text-center">
-                        72小时内会有工作人员联系您<br>请保持购票手机畅通<br>如有疑问可直接拨打<br><a href="tel://021-59882097">021-59882097</a>&nbsp;&nbsp;<a href="tel://021-50855699">021-50855699</a><br>
-                        请随时关注官方微信了解最新企业年会动态 :
+                        请保持购票手机畅通<br>
+                        工作人员会在72小时内与您联系<br>
+                        如有疑问可直接拨打咨询热线<br>
+                        <a href="tel://021-59882097">021-59882097</a>&nbsp;&nbsp;<a href="tel://021-50855699">021-50855699</a>
                     </p>
                     
                     <div class="result" style="display: none">
@@ -693,6 +697,10 @@
                     </div>
                     
                     <img class="qcode" src="images/qcode/img2.jpg">
+                    <p class="text-center">
+                        长按识别二维码关注官方微信，<br>
+                        了解最新企业年会动态<br>
+                    </p>
                 </div>
                 <div class="copyright">复树文化出品</div>
             </div>
@@ -778,11 +786,13 @@
             var state = "<?php echo $state; ?>";
             var url = "payticket.php?name="+name+"&phone="+phone+"&address="+address+"&kind="+kind+"&openid="+openid+"&state="+state;
             var xhr = new XMLHttpRequest();
+            //alert(url);
             xhr.open("POST", url, true);
             xhr.send(null);
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     var msg = xhr.responseText;
+                    //alert(msg);
                     var jsons = eval("("+msg+")");
                     pingpp.createPayment(jsons.charge, function(result, err) {
                         if (result == "success") {
