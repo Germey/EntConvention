@@ -48,6 +48,10 @@ body {
 p.noindent{
 	text-indent: 0 !important;
 }
+a.whirte-link,a.whirte-link:hover {
+	color: #EFEFEF !important;
+	text-decoration: none;
+}
 /* 外层浮动 */
 .con {
 	width: 84%;
@@ -327,21 +331,29 @@ p.noindent{
 #confirm .buy-con {
 	position: absolute;
 	top: 50px;
-	padding: 0px 20px;
 	width: 100%;
+	left: 0;
+	padding: 0 10px;
 }
 #confirm .buy-con .info > div {
 	margin: 5px 0;
+	padding: 0 20px;
 }
 #confirm .content .buy-con .hr {
 	height: 1px;
 	background-color: #2B2B2B;
 	width: 100%;
 	margin: 20px auto;
-	margin-left: -10px;
 }
 #confirm .content .buy-con .choose {
 	width: 100%;
+	padding: 0 20px;
+}
+#confirm .content .buy-con .btns {
+	padding: 0 20px;
+}
+#confirm .content .buy-con .row {
+	width: initial !important;
 }
 #confirm .content .buy-con .choose .row .item {
 	padding: 5px;

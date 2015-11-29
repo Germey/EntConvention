@@ -50,7 +50,7 @@
     
 
     //查询余票，清除锁定
-    $nowitme = time() - (45 * 60);
+    $nowitme = time() - (25 * 60);
     $nowitme = date("Y-m-d H:i:s", $nowitme);
     $sql = "UPDATE ticket SET state=0 WHERE state=1 AND locktime<'{$nowitme}'";
     $query = mysqli_query($con, $sql);
@@ -513,6 +513,9 @@
                     <img src="images/seat/img1.png" id="seat-img">
                     <div class="text-center">
                         <a name="buy" class="btn">立即购票</a>
+                        <p class="text-center">如需协助请致电<br>
+                        <a class="whirte-link" href="tel://021-59882097">021-59882097</a>&nbsp;&nbsp;<a class="whirte-link" href="tel://021-50855699">021-50855699</a>
+                        </p>
                     </div>
 <!--                    <p><b>座位介绍：</b></p>-->
                     <p class="text-center seat-intro">
@@ -565,7 +568,7 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12 item">
-                                <div kind="" class="choose-btn <?php echo intval($kind_count[1])<=171?'disabled':''?>" rank="1"><span>私董席</span><br>余票：<?php echo $kind_count[1]-171; ?></div>
+                                <div kind="" class="choose-btn <?php echo intval($kind_count[1])<=171?'disabled':''?>" rank="1"><span>私董席（定金）</span><br>余票：<?php echo $kind_count[1]-171; ?></div>
                             </div>
                         </div>
                     </div>
@@ -775,8 +778,8 @@
     <script src="js/jweixin.js"></script>
     <script src="js/main.js"></script>
     <script>
-    var submitted = 0;
     $(function() {
+        var submitted = 0;
         $("#buy-button").on("click", function() {
             if (submitted) {
                 alert("您的订单已失效，请重新选择购买");

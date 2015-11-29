@@ -80,8 +80,8 @@ $subject="";
 $amount = 99900;
 switch($t_kind){
     case 1:
-        $amount=2999900;
-        $subject="私董席";
+        $amount=499900;
+        $subject="私董席（定金）";
         break;
     case 2:
         $amount=299900;

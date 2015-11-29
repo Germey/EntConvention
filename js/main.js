@@ -104,10 +104,12 @@ $(function() {
 		rotatePic($("#"+$(this).attr("name")).find(".close img"), 1000, 360);
 	});
 	$("#seat a").on("click", function() {
-		//go to buy page
-		$("#seat").addClass("low");
-		$("#"+$(this).attr("name")).removeClass("low");
-		rotatePic($("#"+$(this).attr("name")).find(".close img"), 1000, 360);
+		if ($(this).attr("name")) {
+			//go to buy page
+			$("#seat").addClass("low");
+			$("#"+$(this).attr("name")).removeClass("low");
+			rotatePic($("#"+$(this).attr("name")).find(".close img"), 1000, 360);
+		}
 	});
 	$("#to-confirm").on("click", function() {
 		if (judgeInfo()) {
@@ -137,7 +139,7 @@ $(function() {
 			var confirm_text = $(this).find("span").text();
 			//如果是私董席，体现价格
 			if ($(this).attr("rank") == 1) {
-				confirm_text += "：29999";
+				confirm_text += "：4999";
 			}
 			$("#confirm .ticket").text(confirm_text);
 		}
