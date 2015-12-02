@@ -139,9 +139,9 @@ $(function() {
 			var confirm_text = $(this).find("span").text();
 			//如果是私董席，体现价格
 			if ($(this).attr("rank") == 1) {
-				confirm_text += "：4999";
+				confirm_text = "私董席：29999元 &nbsp;&nbsp;定金支付：4999元";
 			}
-			$("#confirm .ticket").text(confirm_text);
+			$("#confirm .ticket").html(confirm_text);
 		}
 	});
 	$("#seat-img").on("click", function() {
